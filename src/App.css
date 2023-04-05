@@ -2,10 +2,25 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
+  background: url(./assets/90e7a5647d4ad8ec029aa386c8e84424.jpg);
+  background-size: auto;
+  background-repeat: repeat;
+  background-position: center;
+  background-size: 200px;
+  height: 100vh
+;
 }
 
 form{
   margin: 2rem;
+}
+
+.container{
+  background: #0000008a;
+  padding: 50px;
+  border-radius: 20px;
+  height: 600px;
+  width: 400px;
 }
 
 .img-container {
@@ -22,3 +37,4 @@ form{
 .Loading-h2{
   text-align: center;
 }
+

@@ -12,13 +12,18 @@ const Meme = ({info, showLoading}) => {
         if (info === " ") {
           return
         } else {
-          fetch(`https://cataas.com/cat/says/${info}?size=50&color=red&json=true`)
-          .then(response => response.json())
-          .then(data => {
-            const { url } = data
-            setImageUrl(url)
-            setLoading(false)
-          })
+          try {
+            fetch(`https://cataas.com/cat/says/${info}?size=50&color=red&json=true`)
+            .then(response => response.json())
+            .then(data => {
+              const { url } = data
+              setImageUrl(url)
+              setLoading(false)
+            })
+            
+          } catch (error) {
+            console.log("La api no se encuentra Disponible")
+          }
           
         }
     
